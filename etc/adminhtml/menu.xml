@@ -1,12 +1,22 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="ECInternet_FieldLengthValidation::fieldlengthvalidation"
-             title="Field Length Validation"
-             module="ECInternet_FieldLengthValidation"
-             sortOrder="51"
-             resource="ECInternet_FieldLengthValidation::fieldlengthvalidation"
-        />
-    </menu>
+	<menu>
+		<add id="ECInternet_FieldLengthValidation::menu"
+		     title="Field Length Validation"
+		     module="ECInternet_FieldLengthValidation"
+		     sortOrder="51"
+		     parent="ECInternet_Base::base"
+		     resource="ECInternet_FieldLengthValidation::menu"
+		/>
+
+		<add id="ECInternet_FieldLengthValidation::settings"
+		     title="Settings"
+		     module="ECInternet_FieldLengthValidation"
+		     sortOrder="1"
+		     parent="ECInternet_FieldLengthValidation::menu"
+		     action="adminhtml/system_config/edit/section/fieldlengthvalidation"
+		     resource="ECInternet_FieldLengthValidation::settings"
+		/>
+	</menu>
 </config>

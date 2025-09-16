@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\Checkout\Model\ShippingInformationManagement">
-        <plugin name="ShippingInformationManagementPlugin"
-                type="ECInternet\FieldLengthValidation\Plugin\Checkout\Model\ShippingInformationManagementPlugin" />
-    </type>
+	    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Checkout\Model\ShippingInformationManagement">
+		<plugin name="ECInternet_FieldLengthValidation::ShippingInformationManagementPlugin"
+		        type="ECInternet\FieldLengthValidation\Plugin\Checkout\Model\ShippingInformationManagementPlugin" />
+	</type>
 </config>
