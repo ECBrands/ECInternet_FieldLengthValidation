@@ -6,4 +6,12 @@
 		        type="ECInternet\FieldLengthValidation\Plugin\Checkout\Block\Checkout\LayoutProcessorPlugin"
 		        sortOrder="10" />
 	</type>
+
+	<type name="Magento\Checkout\Model\CompositeConfigProvider">
+		<arguments>
+			<argument name="configProviders" xsi:type="array">
+				<item name="fieldlengthvalidation" xsi:type="object">ECInternet\FieldLengthValidation\Model\Checkout\ConfigProvider</item>
+			</argument>
+		</arguments>
+	</type>
 </config>
